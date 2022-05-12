@@ -1,0 +1,431 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+</head>
+
+<body>
+
+
+
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">E-Commerce Web</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">SUPPORT</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="search">
+                            <button type="submit" class="btn-danger btn-sm">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{% static 'img/back10.jpg' %}" class="img-responsive">
+
+                    <div class="carousel-caption ">
+                        <h1><b>NEW ARRIVALS</b></h1>
+                        <p>Choose like a pro from our first new spring 2022 arrivals.</p>
+                        <a class="btn btn-default" href="#">SHOP MEN'S</a>
+                        <a class="btn btn-default">SHOP WOMEN'S</a>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/back13.jpg' %}" class="img-responsive">
+                    <div class="carousel-caption">
+                        <h1>Sell More. Sell Everywhere.</h1>
+                        <p>Unlock your omnichannel opportunity with this four-<br>pillar approach to holistic commerce success</p>
+                        <a href="#" class="btn btn-success">GET YOUR FREE GUIDE</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/bg1.jpg' %}" class="img-responsive">
+                    <div class="carousel-caption">
+                        <p><strong> the boy saw a real wolf sneaking around his flock. Alarmed, he jumped on his feet and cried out as loud as he could, “Wolf! Wolf!” But the villagers thought he was fooling them again, and so they didn’t come to help. the boy saw a real wolf sneaking around his flock. Alarmed, he jumped on his feet and cried out as loud as he could, “Wolf! Wolf!” But the villagers thought he was fooling them again, and so they didn’t come to help. the boy saw a real wolf sneaking around his flock. Alarmed, he jumped on his feet and cried out as loud as he could, “Wolf! Wolf!” But the villagers thought he was fooling them again, and so they didn’t come to help.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+
+        <div class="container jumbotron">
+            <div class="row ">
+                <div class="col-md-8 bg-primary">
+                    <h1>Great products with<br>best deals</h1>
+                    <p>No matter how far along you are in your sophistication as an amatteur<br>astronomer, there is always one.</p>
+                    <a href="#"><button type="button" class="btn btn-warning btn-lg">View more</button></a>
+                </div>
+                <div class="col-md-4 ">
+                    <h1>Amazing Gifts</h1>
+                    <p>No matter how far along you<br>are in your sophistication</p>
+                    <a href="#" class="btn btn-default">View more</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/1.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$790.50</b></p>
+                            <p class="card-text">GoPro HERO6 4K Action</p>
+                            <p>Camera-Black</p>
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/2.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$320.00</b></p>
+                            <p class="card-text">Canon Camera 20x zoom, Black</p>
+                            <p>color EOS 2000</p>
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/3.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$120.00</b></p>
+                            <p class="card-text">Xiaomi Redmi 8 Original Global</p>
+                            <p>Version 4GB</p>
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/4.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>120.00</b></p>
+                            <p class="card-text">Apple iPhone 12 Pro 6.1 RAM</p>
+                            <p>6GB 512GB Unlocked</p>
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/5.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$120.00</b></p>
+                            <p class="card-text">Apple Watch Series 1 Sport</p>
+                            <p>Case 38mm Black</p>
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/6.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$120.00</b></p>
+                            <p class="card-text">T-shirts with multiple colors, for<br>men and lady</p>
+
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/7.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$99.50</b></p>
+                            <p class="card-text">Gaming Headset 32db Black<br>built in mic</p>
+
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/8.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$120.00</b></p>
+                            <p class="card-text">T-shirts with multiple colors, for<br>men and lady</p>
+
+                            <a href="#" class="btn btn-primary btn-lg">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><b>Delivery to<br>customers<br>faster than ever</b></h1>
+                    <p>Our network of distribution centers has been <br>strategically designed to reach 98% of US<br> markets within 48 hours -- ideally suited for<br> same-day and next-day delivers.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'img/Stock-image-opening-box.jpg' %}" class="img-responsive">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static 'img/UNIS_warehouse_2.jpg' %}" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <h1><b>Order Fulfillment</b></h1>
+                    <p>Our fulfillment network will pick, pack, and<br>ship your orders so you can spend more time<br>managing your business.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container jumbotron jumbo-2">
+            <div class="row ">
+                <div class="col-md-9 ">
+                    <h2>Best products and brands in store</h2>
+                    <p class="lead">Trendy products and text to build on the card title</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><button type="button" class="btn btn-danger btn-lg ">Discover</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Recommended</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/9.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$29.95</b></p>
+                            <p class="card-text">Modern product name here</p>
+                            <p>Sizes: S, M, XL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/10.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$29.95</b></p>
+                            <p class="card-text">Modern product name here</p>
+                            <p>Sizes: S, M, XL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/11.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$29.95</b></p>
+                            <p class="card-text">Modern product name here</p>
+                            <p>Sizes: S, M, XL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{% static 'img/12.jpg' %}" class="img-responsive">
+                        <div class="card-body">
+                            <p class="card-title"><b>$29.95</b></p>
+                            <p class="card-text">Modern product name here</p>
+                            <p>Sizes: S, M, XL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="text-center"><b>Connect Your Ecommerce Platforms</b></h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/Amazon.png' %}"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/Big+Commerce.png' %}"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/Etsy.png' %}"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/Magento.png' %}"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/Shopify.jpg' %}" height="200" width="200"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/ShopifyPlus.png' %}"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/Wish.png' %}"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="{% static 'img/Woo+Commerce.png' %}"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="text-center"><b>Speak To An Expert</b></h1>
+        </div>
+        <div class="container">
+            <h3 class="text-center">Please fill out the contact form below and one of our team members will reach out to you.</h3>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="fname">First Name*</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name*</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email ID*</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Enail Id" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact No*</label>
+                        <input type="text" class="form-control" id="contact" placeholder="Enter Contact Number" name="contact">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-lable">
+                        <input class="form-check-input" type="checkbox" name="remember">
+                        Remember Me
+                    </label>
+                    </div>
+                    <button type="submit" class="btn bg-primary ">Submit</button>
+
+
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5><b>COMPANY</b></h5>
+                        <p>Global Locations</p>
+                        <p>Careers</p>
+                        <p>Enterprise</p>
+                        <p>Mission</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><b>PARTNERSHIPS</b></h5>
+                        <p>Brokers</p>
+                        <p>Landlords</p>
+                        <p>Event Planners</p>
+                        <p>Media</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><b>IMPACT</b></h5>
+                        <p>American Humane</p>
+                        <p>Boys & Girls Clubs</p>
+                        <p>Cancer Research Institute</p>
+                        <p>Goodwill Industries</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><b>SUPPORT</b></h5>
+                        <p>Play Rent</p>
+                        <p>Covid-19</p>
+                        <p>FAQ's</p>
+                        <p>Contact</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <div class="container connect">
+            <div class="row">
+                <div class="col-md-8 ">
+                    <h3><b>(909)991-6669</b></h3>
+                </div>
+                <div class="col-md-4 text-right social ">
+                    <a><i class="fa fa-facebook fa-2x"></i></a>
+                    <a><i class="fa fa-twitter fa-2x"></i></a>
+                    <a> <i class="fa fa-google-plus fa-2x"></i></a>
+                    <a><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
